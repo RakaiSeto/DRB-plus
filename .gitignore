@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Virtual Environment
+# Recommend using a tool like uv, which automatically adds .gitignore to .venv
+# Otherwise, uncomment one of the following lines
+# venv/
+# .venv/
+
+# Django-specific
+*.sqlite3
+db.sqlite3
+/mediafiles/
+/static_collected/
+staticfiles/
+
+# Environment files
+.env
+.flaskenv
+
+# IDE-specific
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+
+basemap/
+tiles/
+extract.py
+download_basemap.py
+*.geojson
+*.mbtiles
+*.pbf
+venv
