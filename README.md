@@ -21,6 +21,7 @@ The ***DRB+ Stack*** is our internal default stack for building applications.
 - **TanStack Router** — type-safe routing
 - **TanStack Form** — form management
 - **Tailwind CSS** — styling
+- **Plus Jakarta Sans** — default font
 
 All projects assume these choices by default.  
 We do not re-debate the stack per app.
