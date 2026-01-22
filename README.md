@@ -19,6 +19,7 @@ The ***DRB+ Stack*** is our internal default stack for building applications.
 - **PostgreSQL** — default database
 - **TanStack Query** — server-state management
 - **TanStack Router** — type-safe routing
+- **TanStack Form** — form management
 - **Tailwind CSS** — styling
 
 All projects assume these choices by default.  
@@ -56,6 +57,7 @@ If something feels clever, it’s probably not aligned with this stack.
 │   └── manage.py
 │
 ├── frontend/             # React app
+│   ├── dist/
 │   ├── src/
 │   │   ├── routes/       # TanStack Router routes
 │   │   ├── api/          # API clients
