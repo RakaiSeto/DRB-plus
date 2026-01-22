@@ -1,11 +1,13 @@
 import os
 from datetime import timedelta
 from pathlib import Path
+from dotenv import load_dotenv
 
 # ========================
 # BASE DIR
 # ========================
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
+load_dotenv(os.path.join(BASE_DIR, "backend", ".env"))
 
 
 # ========================
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
 
+    "api",
     "services",
     "domains",
 ]
@@ -61,8 +64,8 @@ MIDDLEWARE = [
 # ========================
 # URL / WSGI
 # ========================
-ROOT_URLCONF = "backend.urls"
-WSGI_APPLICATION = "backend.wsgi.application"
+ROOT_URLCONF = "app.urls"
+WSGI_APPLICATION = "app.wsgi.application"
 
 
 # ========================
@@ -163,11 +166,13 @@ USE_TZ = True
 # ========================
 # STATIC / MEDIA
 # ========================
-STATIC_URL = "/static/"
+STATIC_URL = "/assets/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "frontend", "dist", "assets")
+    os.path.join(BASE_DIR, "frontend", "dist", "assets"),
 ]
+
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")

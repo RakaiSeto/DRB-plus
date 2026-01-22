@@ -42,7 +42,7 @@ If something feels clever, it’s probably not aligned with this stack.
 ## Requirements
 
 - Bun
-- Python 3.x
+- Python 3.XX (3.11 if pt.xyz app for server compliance)
 - PostgreSQL
 
 ---
@@ -81,7 +81,7 @@ This project follows the ***DRB+ Stack*** and assumes a split backend/frontend s
 
 ```bash
 cd backend
-python -m venv venv
+python 3.11 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
